@@ -1,0 +1,50 @@
+<div class="card p-3 mt-3">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do funcionario</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Nome de funcionario" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="cpf" class="form-label">Cargo do funcionario</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Cargo de funcionario" formControlName="Cargo">
+            <div class="invalid-feedback">
+                Informe o Cargo do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="rg" class="form-label">Salario do funcionario</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Salario de funcionario" formControlName="Salario">
+            <div class="invalid-feedback">
+                Informe o Salario do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="endereco" class="form-label">areaAtuação do funcionario</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="areaAtuação do funcionario" formControlName="areaAtuação">
+            <div class="invalid-feedback">
+                Informe o areaAtuação do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="email" class="form-label">localTrabalho do funcionario</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="localTrabalho do funcionario" formControlName="localTrabalho">
+            <div class="invalid-feedback">
+                Informe o localTrabalho do funcionario!!!
+            </div>
+        </div>
+
+
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-primary me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
